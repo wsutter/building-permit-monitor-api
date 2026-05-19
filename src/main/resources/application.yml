@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/building_permits
+    username: app
+    password: app
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
